@@ -382,11 +382,6 @@ textarea {
     padding-bottom: 120px;
   }
 }
-@media only screen and (max-width: 767.98px) {
-  .team-container {
-    max-width: 296px;
-  }
-}
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .team-container {
     max-width: 584px;
@@ -415,6 +410,9 @@ textarea {
 @media only screen and (max-width: 767.98px) {
   .team-list-item:not(:last-child) {
     margin-bottom: 72px;
+  }
+  .team-list-item {
+    width: 264px;
   }
 }
 @media only screen and (min-width: 768px) {
