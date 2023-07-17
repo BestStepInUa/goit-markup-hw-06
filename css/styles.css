@@ -147,7 +147,7 @@ textarea {
   align-items: center;
 }
 .header .logo {
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 .header .link {
   padding: 24px 0;
@@ -160,6 +160,11 @@ textarea {
   gap: var(--indent);
   align-items: center;
   --indent: 40px;
+}
+@media only screen and (max-width: 767.98px) {
+  .header-list {
+    display: none;
+  }
 }
 .header-list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
@@ -185,6 +190,11 @@ textarea {
   background-color: var(--pressed-state-cl);
 }
 .header-address {
+}
+@media only screen and (max-width: 767.98px) {
+  .header-address {
+    display: none;
+  }
 }
 .header-address-list {
   display: flex;
@@ -413,6 +423,7 @@ textarea {
   }
   .team-list-item {
     width: 264px;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -922,4 +933,85 @@ textarea {
 .modal-form-button:hover,
 .modal-form-button:focus {
   background-color: var(--pressed-state-cl);
+}
+/*
+  |============================
+  | Mobile menu styles
+  |============================
+*/
+.menu-toggle {
+  min-height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--accent-cl);
+  outline: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu-toggle-icon {
+  stroke: var(--dark-cl);
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform var(--main-transition-duration-and-timing-function);
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.menu-close-icon {
+  fill: var(--dark-cl);
+}
+.mobile-menu-container {
+}
+.mobile-menu-nav {
+}
+.mobile-menu-nav-list {
+}
+.mobile-menu-nav-list-item {
+}
+.mobile-menu-nav-list-item-link {
+}
+.mobile-address {
+}
+.mobile-address-list {
+}
+.mobile-address-list-item {
+}
+.mobile-address-list-link {
+}
+.mobile-social-media-container {
+}
+.mobile-social-media-list {
+}
+.mobile-social-media-list-item {
+}
+.mobile-social-media-list-item-link {
+}
+.mobile-social-media-list-item-link-icon {
 }
