@@ -51,7 +51,7 @@
             >
           </ul>
         </address>
-        <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+        <button class="menu-toggle js-open-menu btn" aria-controls="mobile-menu" aria-expanded="false">
           <svg class="menu-toggle-icon" width="32" height="22">
             <use href="./images/icons.svg#mob-menu"></use>
           </svg>
@@ -574,7 +574,7 @@
             <label class="subscribe-form-label">
               <input class="subscribe-form-input" name="user-email" type="email" placeholder="E-mail" required />
             </label>
-            <button class="subscribe-form-btn" type="submit"
+            <button class="subscribe-form-btn btn" type="submit"
               >Subscribe
               <svg class="subscribe-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#subscribe"></use>
@@ -588,7 +588,7 @@
     <!-- Modal window "Order service" -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" data-modal-close type="button">
+        <button class="modal-close-btn btn" data-modal-close type="button">
           <svg class="close-modal-icon" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -652,108 +652,106 @@
               <a class="modal-form-checkbox-link link" href="#">Privacy Policy</a>
             </label>
           </div>
-          <button class="modal-form-button" type="submit">Send</button>
+          <button class="modal-form-button btn" type="submit">Send</button>
         </form>
       </div>
     </div>
 
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-toggle js-close-menu btn">
         <svg class="menu-close-icon" width="8" height="8">
           <use href="./images/icons.svg#menu-close"></use>
+        </svg>        
         </svg>
       </button>
 
-      <div class="mobile-menu-container">
-        <nav class="mobile-menu-nav">
-          <ul class="mobile-menu-nav-list list">
-            <li class="mobile-menu-nav-list-item">
-              <a href="./index.html" class="mobile-menu-nav-list-item-link link">Studio</a>
-            </li>
-            <li class="mobile-menu-nav-list-item">
-              <a href="./portfolio.html" class="mobile-menu-nav-list-item-link link">Portfolio</a>
-            </li>
-            <li class="mobile-menu-nav-list-item">
-              <a href="#" class="mobile-menu-nav-list-item-link link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="mobile-nav">
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link active link" href>Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href>Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href>Contacts</a>
+          </li>
+        </ul>
+      </nav>
 
-        <address class="mobile-address">
-          <ul class="mobile-address-list list">
-            <li class="mobile-address-list-item"
-              ><a class="mobile-address-list-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li
-            >
-            <li class="mobile-address-list-item">
-              <a class="mobile-address-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
-            >
-          </ul>
-        </address>
+      <address class="mobile-address">
+        <ul class="mobile-address-list list">
+          <li class="mobile-address-list-item"
+            ><a class="mobile-address-list-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li
+          >
+          <li class="mobile-address-list-item">
+            <a class="mobile-address-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
+          >
+        </ul>
+      </address>
 
-        <div class="mobile-social-media-container">
-          <ul class="mobile-social-media-list list">
-            <li class="mobile-social-media-list-item">
-              <a
-                class="mobile-social-media-list-item-link link"
-                href="https://instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="mobile-social-media-list-item-link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-social-media-list-item">
-              <a
-                class="mobile-social-media-list-item-link link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="mobile-social-media-list-item-link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-social-media-list-item">
-              <a
-                class="mobile-social-media-list-item-link link"
-                href="https://facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="mobile-social-media-list-item-link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-social-media-list-item">
-              <a
-                class="mobile-social-media-list-item-link link"
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="mobile-social-media-list-item-link-icon" width="24" height="24">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="mobile-social-media-container">
+        <ul class="mobile-social-media-list list">
+          <li class="mobile-social-media-item">
+            <a
+              class="mobile-social-media-item-link link"
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-media-item">
+            <a
+              class="mobile-social-media-item-link link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-media-item">
+            <a
+              class="mobile-social-media-item-link link"
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-media-item">
+            <a
+              class="mobile-social-media-item-link link"
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-
     <!-- Mobile menu scripts -->
     <script
-      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      defer
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js" defer></script>
     <!-- Modal window script -->
     <script src="./js/modal.js"></script>
   </body>
