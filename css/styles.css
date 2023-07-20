@@ -146,18 +146,17 @@ textarea {
   display: flex;
   align-items: center;
 }
-
 .header-nav .link {
   padding: 24px 0;
-}
-@media only screen and (min-width: 1158px) {
-  .header .logo {
-    margin-right: 76px;
-  }
 }
 @media only screen and (min-width: 768px) {
   .header .logo {
     margin-right: 120px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .header .logo {
+    margin-right: 76px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -171,12 +170,6 @@ textarea {
 }
 .header .logo-accent {
   color: var(--dark-cl);
-}
-.header-list {
-  display: flex;
-  gap: var(--indent);
-  align-items: center;
-  --indent: 40px;
 }
 @media only screen and (max-width: 767.98px) {
   .header-list {
@@ -214,8 +207,6 @@ textarea {
   border-radius: 2px;
   background-color: var(--pressed-state-cl);
 }
-.header-address {
-}
 @media only screen and (max-width: 767.98px) {
   .header-address {
     display: none;
@@ -237,29 +228,34 @@ textarea {
 .header-address-list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
+@media only screen and (min-width: 768px) {
+  .header-address-list-item {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .header-address-list-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
 .header-address-list-link {
   color: var(--text-cl);
   transition: color var(--main-transition-duration-and-timing-function);
 }
-@media only screen and (min-width: 768px) {
-  .header-address-list-link {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04;
-  }
-}
-/* @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
-  .header-address-list-item:first-child .header-address-list-link {
-    padding-top: 0px;
-    padding-bottom: 16;
-  }
-}
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .header-address-list-item:first-child .header-address-list-link {
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
   .header-address-list-item:last-child .header-address-list-link {
     padding-top: 0;
     padding-bottom: 16px;
   }
-} */
+}
 /* Hero section styles */
 .hero {
   max-width: 1440px;
