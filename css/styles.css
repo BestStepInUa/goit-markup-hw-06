@@ -50,8 +50,9 @@ body {
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 /* Tablet screen styles */
 @media only screen and (min-width: 768px) {
@@ -67,8 +68,8 @@ body {
     padding-left: 15px;
   }
 }
-.section {
-}
+/* .section {
+} */
 /* Reset */
 h1,
 h2,
@@ -226,6 +227,7 @@ textarea {
   }
 }
 .header-address-list-link {
+  display: block;
   color: var(--text-cl);
   transition: color var(--main-transition-duration-and-timing-function);
 }
@@ -398,8 +400,6 @@ textarea {
     background-color: var(--light-bg-cl);
   }
 }
-.features-list-item-icon {
-}
 /*
   |============================
   | What are we doing? section styles
@@ -476,8 +476,6 @@ textarea {
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
   }
 }
-.team-list-item-img {
-}
 .team-list-item-card-content {
   padding: 32px 0;
   text-align: center;
@@ -497,8 +495,6 @@ textarea {
   gap: var(--indent);
   justify-content: center;
   align-items: center;
-}
-.social-media-item {
 }
 .social-media-item-link {
   display: flex;
@@ -578,17 +574,33 @@ textarea {
 }
 /* Portfolio page styles */
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 /* Portfolio filter styles */
 .porfolio-filter {
   display: flex;
-  gap: var(--indent);
-  justify-content: center;
-  margin-bottom: 72px;
+  row-gap: 16px;
+  column-gap: var(--indent);
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  margin-bottom: 72px; */
 }
 .porfolio-filter-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .portfolio-filter-list-item-btn {
   padding: 12px 24px;
@@ -1021,7 +1033,6 @@ textarea {
   background-color: var(--white-bg-cl);
   transition: transform var(--main-transition-duration-and-timing-function) 250ms;
   transform: translateX(100%);
-  overflow-y: auto;
 }
 .menu-container.is-open {
   transition: transform var(--main-transition-duration-and-timing-function);
