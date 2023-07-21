@@ -600,7 +600,6 @@ textarea {
   margin-bottom: 72px; */
 }
 .porfolio-filter-item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .portfolio-filter-list-item-btn {
   padding: 12px 24px;
