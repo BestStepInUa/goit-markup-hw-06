@@ -1015,7 +1015,7 @@ textarea {
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  padding: 80px 0 40px 60px;
+  padding: 80px 0 40px 40px;
   background-color: var(--white-bg-cl);
   transition: transform var(--main-transition-duration-and-timing-function) 250ms;
   transform: translateX(100%);
@@ -1080,7 +1080,7 @@ textarea {
   color: var(--pressed-state-cl);
 }
 .mobile-address {
-  margin-bottom: 48px;
+  margin-bottom: 28px;
   padding-right: 35px;
 }
 /* @media only screen and (min-height: 320px) and (max-height: 480px) {
