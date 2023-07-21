@@ -1071,7 +1071,7 @@ textarea {
   color: var(--pressed-state-cl);
 }
 .mobile-address {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   padding-right: 35px;
 }
 .mobile-address-list-item:first-child {
