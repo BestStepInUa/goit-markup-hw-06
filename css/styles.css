@@ -596,13 +596,23 @@ textarea {
   column-gap: var(--indent);
   justify-content: flex-start;
   flex-wrap: wrap;
-  /* justify-content: center;
-  margin-bottom: 72px; */
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .porfolio-filter {
+    gap: var(--indent);
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .porfolio-filter {
+    margin-bottom: 72px;
+  }
 }
 .porfolio-filter-item {
 }
 .portfolio-filter-list-item-btn {
-  padding: 12px 24px;
   border: 1px solid var(--accent-cl);
   border-radius: 4px;
   background-color: var(--light-bg-cl);
@@ -617,6 +627,16 @@ textarea {
     border-color var(--main-transition-duration-and-timing-function),
     box-shadow var(--main-transition-duration-and-timing-function);
 }
+@media only screen and (max-width: 767.98px) {
+  .portfolio-filter-list-item-btn {
+    padding: 8px 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-filter-list-item-btn {
+    padding: 12px 24px;
+  }
+}
 .portfolio-filter-list-item-btn:hover,
 .portfolio-filter-list-item-btn:focus {
   border-color: transparent;
@@ -625,13 +645,35 @@ textarea {
   box-shadow: var(--portfolio-filter-btn-hover-shadow);
 }
 /* Portfolio list styles */
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
+@media only screen and (max-width: 767.98px) {
+  .portfolio-list-wrapper {
+    max-width: 428px;
+  }
 }
-.portfolio-list-item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: var(--indent);
+    --items: 2;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 48px;
+    --items: 3;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .portfolio-list-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-list-item {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
 }
 .portfolio-list-item-link {
   display: block;
