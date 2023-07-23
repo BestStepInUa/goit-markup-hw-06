@@ -282,7 +282,6 @@ textarea {
   |============================
 */
 .hero {
-  max-width: 767.98px;
   margin: 0 auto;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -295,7 +294,6 @@ textarea {
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    max-width: 1157.98px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -705,6 +703,7 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   .portfolio-list {
+    flex-direction: row;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: var(--indent);
@@ -765,9 +764,16 @@ textarea {
   transition: transform var(--main-transition-duration-and-timing-function);
   transform: translateY(100%);
 }
-.portfolio-list-item-link:hover .portfolio-overlay,
-.portfolio-list-item-link:focus .portfolio-overlay {
-  transform: translateY(0);
+@media only screen and (hover) {
+  .portfolio-list-item-link:hover .portfolio-overlay,
+  .portfolio-list-item-link:focus .portfolio-overlay {
+    transform: translateY(0);
+  }
+}
+@media only screen and (hover: none) {
+  .portfolio-list-item-link:active .portfolio-overlay {
+    transform: translateY(0);
+  }
 }
 .portfolio-overlay-text {
   color: var(--ligth-cl);
