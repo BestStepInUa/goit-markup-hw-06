@@ -32,7 +32,11 @@
   /* The main gap indent in Flexbox grid */
   --indent: 24px;
 }
-/* Comon styles */
+/*
+  |============================
+  | Comon styles
+  |============================
+*/
 body {
   background-color: var(--white-bg-cl);
   color: var(--text-cl);
@@ -70,7 +74,11 @@ body {
 }
 /* .section {
 } */
-/* Reset */
+/*
+  |============================
+  | Reset
+  |============================
+*/
 h1,
 h2,
 h3,
@@ -120,7 +128,11 @@ textarea {
   text-align: center;
   text-transform: capitalize;
 }
-/* Logo design */
+/*
+  |============================
+  | Logo styles
+  |============================
+*/
 .logo,
 .logo-accent {
   font-weight: 800;
@@ -133,7 +145,11 @@ textarea {
 .logo {
   color: var(--primary-brand-cl);
 }
-/* Header styles */
+/*
+  |============================
+  | Header styles
+  |============================
+*/
 .header {
   border-bottom: 1px solid var(--accent-cl);
   box-shadow: var(--header-shadow);
@@ -260,7 +276,11 @@ textarea {
     padding-bottom: 16px;
   }
 }
-/* Hero section styles */
+/*
+  |============================
+  | Hero section styles
+  |============================
+*/
 .hero {
   max-width: 1440px;
   margin: 0 auto;
@@ -401,9 +421,9 @@ textarea {
   }
 }
 /*
-  |============================
+  |===================================
   | What are we doing? section styles
-  |============================
+  |===================================
 */
 .we-doing {
   display: none;
@@ -572,7 +592,11 @@ textarea {
   border-color: var(--pressed-state-cl);
   color: var(--pressed-state-cl);
 }
-/* Portfolio page styles */
+/*
+  |============================
+  | Portfolio page styles
+  |============================
+*/
 .portfolio {
   padding-top: 48px;
   padding-bottom: 48px;
@@ -645,14 +669,15 @@ textarea {
   box-shadow: var(--portfolio-filter-btn-hover-shadow);
 }
 /* Portfolio list styles */
-@media only screen and (max-width: 767.98px) {
-  .portfolio-list-wrapper {
-    max-width: 428px;
-  }
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
+
 @media only screen and (min-width: 768px) {
   .portfolio-list {
-    display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: var(--indent);
@@ -663,11 +688,6 @@ textarea {
   .portfolio-list {
     row-gap: 48px;
     --items: 3;
-  }
-}
-@media only screen and (max-width: 767.98px) {
-  .portfolio-list-item:not(:last-child) {
-    margin-bottom: 48px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -701,8 +721,6 @@ textarea {
   font-size: 20px;
   line-height: 1.2;
 }
-.portfolio-list-item-link-text {
-}
 /* Portfolio overlay styles */
 .portfolio-img-wrapper {
   position: relative;
@@ -727,43 +745,67 @@ textarea {
 .portfolio-overlay-text {
   color: var(--ligth-cl);
 }
+/*
+  |============================
+  | Footer styles
+  |============================
+*/
 /* Footer styles */
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--dark-bg-cl);
 }
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  /* display: flex;
+  align-items: baseline; */
 }
 .footer-logo-text-container {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  margin-bottom: 72px;
 }
 .footer .logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
+  text-align: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 .footer .logo-accent,
 .footer-text {
   color: var(--ligth-cl);
 }
 .footer-text {
-  max-width: 264px;
+  max-width: 268px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .footer-text {
+    max-width: 264px;
+  }
 }
 .footer-social-media-container {
-  margin-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  /* margin-right: 80px; */
 }
 .footer-social-media-container-title {
   margin-bottom: 16px;
   color: var(--white-cl);
   font-weight: 500;
+  text-align: center;
 }
 .footer-social-media-list {
   display: flex;
   gap: var(--indent);
   justify-content: center;
-  align-items: center;
   --indent: 16px;
 }
 .footer-social-media-list-item {
@@ -788,18 +830,20 @@ textarea {
 }
 /* Footer subscribe form styles */
 .subscribe-form {
-  display: flex;
-  gap: 24px;
+  /* display: flex;
+  gap: 24px; */
 }
 .subscribe-form-title {
   margin-bottom: 16px;
   color: var(--white-cl);
   font-weight: 500;
+  text-align: center;
 }
 .subscribe-form-input {
   width: 264px;
   height: 40px;
   padding: 0 16px;
+  margin-bottom: 16px;
   border: 1px solid var(--white-cl);
   border-radius: 4px;
   background-color: transparent;
@@ -1072,7 +1116,7 @@ textarea {
   height: 100vh;
   padding: 80px 0 75px 40px;
   background-color: var(--white-bg-cl);
-  transition: transform var(--main-transition-duration-and-timing-function) 250ms;
+  transition: transform var(--main-transition-duration-and-timing-function) 150ms;
   transform: translateX(100%);
 }
 .menu-container.is-open {
@@ -1096,7 +1140,8 @@ textarea {
   transition: background-color var(--main-transition-duration-and-timing-function),
     border var(--main-transition-duration-and-timing-function);
 }
-.menu-container .menu-toggle:active {
+.menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus {
   border: none;
   background-color: var(--pressed-state-cl);
 }
@@ -1104,7 +1149,8 @@ textarea {
   fill: var(--dark-cl);
   transition: fill var(--main-transition-duration-and-timing-function);
 }
-.menu-container .menu-toggle:active .menu-close-icon {
+.menu-container .menu-toggle:hover .menu-close-icon,
+.menu-container .menu-toggle:focus .menu-close-icon {
   fill: var(--white-cl);
 }
 .mobile-menu {
@@ -1167,7 +1213,8 @@ textarea {
   background-color: var(--primary-brand-cl);
   transition: background-color var(--main-transition-duration-and-timing-function);
 }
-.mobile-social-media-item-link:active {
+.mobile-social-media-item-link:hover,
+.mobile-social-media-item-link:focus {
   background-color: var(--pressed-state-cl);
 }
 .mobile-social-media-icon {
