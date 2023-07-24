@@ -286,11 +286,37 @@ textarea {
   padding-top: 112px;
   padding-bottom: 112px;
   background-color: var(--dark-bg-cl);
-  background-image: var(--hero-gradient), url(../images/hero/bg.jpg);
+  background-image: var(--hero-gradient), url(../images/hero/bg_mob@1x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+}
+/* Retina screen styles */
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/bg_mob@2x.jpg);
+  }
+}
+@media only screen and (min-width: 429px) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/bg_tab@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient), url(../images/hero/bg_tab@2x.jpg);
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  .hero {
+    background-image: var(--hero-gradient), url(../images/hero/bg_desk@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient), url(../images/hero/bg_desk@2x.jpg);
+    }
+  }
 }
 @media only screen and (min-width: 768px) {
   .hero {
