@@ -1186,6 +1186,7 @@ textarea {
 
 .modal-form-checkbox-link {
   color: var(--primary-brand-cl);
+  text-decoration: underline;
 }
 .modal-form-button {
   display: block;
