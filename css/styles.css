@@ -1003,6 +1003,7 @@ textarea {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: var(--modal-cl);
   transition: opacity var(--main-transition-duration-and-timing-function),
     visibility var(--main-transition-duration-and-timing-function);
