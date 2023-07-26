@@ -1022,7 +1022,7 @@ textarea {
   top: 50%;
   left: 50%;
   width: 392px;
-  height: 584px;
+  min-height: 584px;
   padding: 72px 16px 24px;
   border-radius: 4px;
   background-color: var(--modal-bg-cl);
