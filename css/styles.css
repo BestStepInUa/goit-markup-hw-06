@@ -1003,6 +1003,7 @@ textarea {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: var(--modal-cl);
   transition: opacity var(--main-transition-duration-and-timing-function),
     visibility var(--main-transition-duration-and-timing-function);
@@ -1037,7 +1038,7 @@ textarea {
 }
 @media only screen and (max-width: 767.98px) {
   .modal {
-    top: 80px;
+    top: 20px;
     transform: translateX(-50%); scale(1);
   }
 }
