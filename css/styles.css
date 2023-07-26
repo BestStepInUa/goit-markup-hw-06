@@ -1008,11 +1008,11 @@ textarea {
   transition: opacity var(--main-transition-duration-and-timing-function),
     visibility var(--main-transition-duration-and-timing-function);
 }
-@media only screen and (max-width: 767.98px) {
+/* @media only screen and (max-width: 767.98px) {
   .backdrop {
     overflow-y: scroll;
   }
-}
+} */
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -1038,7 +1038,7 @@ textarea {
 }
 @media only screen and (max-width: 767.98px) {
   .modal {
-    top: 20px;
+    top: 80px;
     transform: translateX(-50%); scale(1);
   }
 }
